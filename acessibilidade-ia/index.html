@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IA e Acessibilidade — Início</title>
+<meta name="description" content="Um mini-site sobre como a inteligência artificial está transformando a acessibilidade digital.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+<header class="site-header">
+  <div class="wrap header-row">
+    <a class="brand" href="index.html">
+      <span class="brand-name">IA e Acessibilidade</span>
+    </a>
+    <nav class="primary" aria-label="Navegação principal">
+      <a href="index.html" aria-current="page">Início</a>
+      <a href="aplicacoes.html">Aplicações</a>
+      <a href="beneficios-desafios.html">Benefícios &amp; Desafios</a>
+      <a href="futuro.html">Futuro</a>
+    </nav>
+    <button id="a11y-toggle" class="a11y-toggle" aria-expanded="false" aria-controls="a11y-panel">
+      ⚙ Ferramentas de leitura
+    </button>
+  </div>
+  <div class="progress-strip" aria-hidden="true"><span class="on"></span><span></span><span></span><span></span></div>
+  <div id="a11y-panel" class="a11y-panel">
+    <div class="wrap a11y-panel-inner">
+      <div class="a11y-group">
+        <span>Tamanho do texto</span>
+        <button class="a11y-btn" data-fontstep="-0.1" aria-label="Diminuir texto">A−</button>
+        <button class="a11y-btn" data-fontstep="0" aria-label="Tamanho padrão">A</button>
+        <button class="a11y-btn" data-fontstep="0.1" aria-label="Aumentar texto">A+</button>
+      </div>
+      <div class="a11y-group">
+        <span>Contraste</span>
+        <button id="btn-contraste" class="a11y-btn" type="button" aria-pressed="false">Alto contraste</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="conteudo">
+  <div class="hero wrap">
+    <h1>O que acontece quando a IA aprende a enxergar, ouvir e falar por quem precisa?</h1>
+    <p class="lede">Esse site reúne, de um jeito direto, como a inteligência artificial vem sendo usada pra derrubar barreiras digitais, o que ela já dá conta de resolver, o que promete resolver e o que ainda tem dificuldades.</p>
+  </div>
+
+  <div class="wrap">
+    <section aria-labelledby="h-ia">
+      <h2 id="h-ia"><span class="num">01 — CONCEITO</span>O que é Inteligência Artificial</h2>
+      <p class="section-lede">De forma bem simples, IA é a área da computação que cria sistemas capazes de fazer coisas que normalmente exigiriam um humano: reconhecer uma imagem, entender uma frase falada, perceber um padrão nos dados. Os modelos de hoje, treinados com uma quantidade absurda de texto, imagem e áudio, tornaram tudo isso rápido, barato e disponível em qualquer celular e foi exatamente essa mudança que abriu espaço pra IA entrar de vez na área de acessibilidade.</p>
+    </section>
+
+    <section aria-labelledby="h-acess">
+      <h2 id="h-acess"><span class="num">02 — CONCEITO</span>O que é acessibilidade digital</h2>
+      <p class="section-lede">Acessibilidade digital é basicamente garantir que sites, apps e conteúdos possam ser usados por qualquer pessoa, não importa suas capacidades sensoriais, motoras ou cognitivas, alguém que não enxerga, que não ouve, que não consegue usar mouse, ou que processa informação de um jeito diferente. Existem padrões pra isso, como as WCAG, e no Brasil também temos a Lei Brasileira de Inclusão.</p>
+      <div class="stat">
+        <strong>1,3 bilhão</strong>
+        <span>de pessoas — cerca de 16% da população mundial — vivem com algum tipo significativo de deficiência, segundo estimativas da OMS.</span>
+      </div>
+    </section>
+
+    <section aria-labelledby="h-relacao">
+      <h2 id="h-relacao"><span class="num">03 — CRUZAMENTO</span>Onde IA e acessibilidade se encontram</h2>
+      <p class="section-lede">Por muito tempo, acessibilidade dependeu de soluções manuais e caras: transcrição feita por gente, descrição de imagem feita por voluntário, intérprete sob demanda. A IA muda esse jogo porque automatiza justamente as tarefas de percepção (ver, ouvir, converter) que antes só um humano fazia bem. Isso não substitui a acessibilidade "de base" (tipo uma estrutura semântica correta em HTML), mas adiciona uma camada de tradução em tempo real que antes era simplesmente inviável em escala.</p>
+    </section>
+
+    <section aria-labelledby="h-objetivo">
+      <h2 id="h-objetivo"><span class="num">04 — SOBRE ESTE SITE</span>Objetivo</h2>
+      <p class="section-lede">As próximas três páginas mostram as aplicações práticas que já existem, o equilíbrio entre benefícios e desafios dessa tecnologia, e pra onde essa área caminha. E, pra ser coerente com o próprio tema, esse site foi construído seguindo o que ele mesmo descreve: contraste ajustável, texto redimensionável, navegação por teclado e marcação semântica. Dá pra testar na barra "Ferramentas de leitura" ali em cima.</p>
+    </section>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+
+    <div class="pager">
+      <span></span>
+      <a class="next" href="aplicacoes.html">Próximo — Aplicações da IA →</a>
+    </div>
+
+    <p class="footer-note">
+      Projeto desenvolvido para a disciplina de Introdução à Computação do curso de Computação e Inteligência Artificial da UFMA.
+    </p>
+
+    <div class="foot-row" style="margin-top:.8rem;">
+      <p>Autores: Marcone José de Carvalho Queiroz Júnior, João Vitor Araújo Serra e Rodrigo Goulart Cavalcante Rego.</p>
+      <p>Página 1 de 4</p>
+    </div>
+
+  </div>
+</footer>
+
+<script src="a11y.js"></script>
+</body>
+</html>

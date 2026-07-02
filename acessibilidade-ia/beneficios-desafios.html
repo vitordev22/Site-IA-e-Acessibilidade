@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IA e Acessibilidade — Benefícios e Desafios</title>
+<meta name="description" content="O equilíbrio entre os ganhos reais e os riscos ainda não resolvidos da IA aplicada à acessibilidade.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+<header class="site-header">
+  <div class="wrap header-row">
+    <a class="brand" href="index.html">
+      <span class="brand-name">IA e Acessibilidade</span>
+    </a>
+    <nav class="primary" aria-label="Navegação principal">
+      <a href="index.html">Início</a>
+      <a href="aplicacoes.html">Aplicações</a>
+      <a href="beneficios-desafios.html" aria-current="page">Benefícios &amp; Desafios</a>
+      <a href="futuro.html">Futuro</a>
+    </nav>
+    <button id="a11y-toggle" class="a11y-toggle" aria-expanded="false" aria-controls="a11y-panel">
+      ⚙ Ferramentas de leitura
+    </button>
+  </div>
+  <div class="progress-strip" aria-hidden="true"><span class="on"></span><span class="on"></span><span class="on"></span><span></span></div>
+  <div id="a11y-panel" class="a11y-panel">
+    <div class="wrap a11y-panel-inner">
+      <div class="a11y-group">
+        <span>Tamanho do texto</span>
+        <button class="a11y-btn" data-fontstep="-0.1" aria-label="Diminuir texto">A−</button>
+        <button class="a11y-btn" data-fontstep="0" aria-label="Tamanho padrão">A</button>
+        <button class="a11y-btn" data-fontstep="0.1" aria-label="Aumentar texto">A+</button>
+      </div>
+      <div class="a11y-group">
+        <span>Contraste</span>
+        <button id="btn-contraste" class="a11y-btn" type="button" aria-pressed="false">Alto contraste</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="conteudo">
+  <div class="hero wrap">
+    <span class="eyebrow">Página 3 · Balanço crítico</span>
+    <h1>O ganho é real. O risco também.</h1>
+    <p class="lede">Nenhuma tecnologia de acessibilidade é neutra: cada coisa que a IA resolve carrega junto uma limitação que ela ainda não resolveu. Colocar os dois lados lado a lado é o jeito mais honesto de avaliar o tema.</p>
+  </div>
+
+  <div class="wrap">
+    <div class="split">
+      <div class="panel beneficios">
+        <h2>Benefícios</h2>
+        <ul>
+          <li><strong>Inclusão digital</strong> — diminui a distância entre quem tem e quem não tem acesso a intérprete, leitor ou legendador humano disponível o tempo todo.</li>
+          <li><strong>Autonomia</strong> — deixa a pessoa resolver sozinha tarefas que antes dependiam de outra pessoa, tipo ler uma bula ou identificar uma nota de dinheiro.</li>
+          <li><strong>Educação</strong> — material didático pode virar áudio, Libras ou texto simplificado automaticamente, sem esperar uma adaptação manual demorada.</li>
+          <li><strong>Mercado de trabalho</strong> — ferramenta de transcrição, legenda e leitura abre mais funções que uma pessoa com deficiência pode exercer sem barreira.</li>
+          <li><strong>Comunicação</strong> — tradução de fala, texto e Libras em tempo real aproxima pessoas que, sem isso, teriam uma conversa mais limitada.</li>
+        </ul>
+      </div>
+      <div class="panel desafios">
+        <h2>Desafios</h2>
+        <ul>
+          <li><strong>Erros de reconhecimento</strong> — sotaque, ruído de fundo ou imagem complexa ainda geram legenda e descrição erradas, às vezes sem ninguém perceber.</li>
+          <li><strong>Viés algorítmico</strong> — modelo treinado com dado pouco diverso reconhece pior rosto, sotaque e contexto fora do "padrão" usado no treinamento.</li>
+          <li><strong>Custo</strong> — nem todo recurso avançado é de graça; dispositivo e assinatura premium ainda deixam de fora quem tem menos renda.</li>
+          <li><strong>Privacidade</strong> — descrever imagem ou transcrever fala significa processar dado sensível, muitas vezes enviado pra servidor de terceiro.</li>
+          <li><strong>Dependência de internet</strong> — boa parte dessas ferramentas só funciona com conexão estável, o que as deixa inúteis onde a cobertura é ruim.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="stat">
+      <strong>2,5 bilhões</strong>
+      <span>de pessoas no mundo precisam de algum produto assistivo (óculos, aparelho auditivo, app de comunicação); quase 1 bilhão delas ainda não tem acesso a essas tecnologias, segundo a OMS/UNICEF.</span>
+    </div>
+
+    <p class="section-lede" style="margin-top:1.6rem;">No fim das contas, a IA puxa a régua dos dois lados ao mesmo tempo: derruba algumas barreiras a um custo muito menor, mas também traz novos pontos de falha (algorítmico, financeiro, de conectividade) que não se resolvem só com mais tecnologia. Precisam de política pública junto.</p>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+
+    <div class="pager">
+      <a href="aplicacoes.html">← Aplicações da IA</a>
+      <a class="next" href="futuro.html">Próximo — Tendências →</a>
+    </div>
+
+    <p class="footer-note">
+      Projeto desenvolvido para a disciplina de Introdução à Computação do curso de Computação e Inteligência Artificial da UFMA.
+    </p>
+
+    <div class="foot-row" style="margin-top:.8rem;">
+      <p>Autores: Marcone José de Carvalho Queiroz Júnior, João Vitor Araújo Serra e Rodrigo Goulart Cavalcante Rego.</p>
+      <p>Página 3 de 4</p>
+    </div>
+
+  </div>
+</footer>
+
+<script src="a11y.js"></script>
+</body>
+</html>

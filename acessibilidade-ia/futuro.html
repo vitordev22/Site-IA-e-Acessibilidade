@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IA e Acessibilidade — Futuro e Conclusão</title>
+<meta name="description" content="Para onde caminha a IA aplicada à acessibilidade e uma conclusão sobre seu papel na inclusão digital.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+<header class="site-header">
+  <div class="wrap header-row">
+    <a class="brand" href="index.html">
+      <span class="brand-name">IA e Acessibilidade</span>
+    </a>
+    <nav class="primary" aria-label="Navegação principal">
+      <a href="index.html">Início</a>
+      <a href="aplicacoes.html">Aplicações</a>
+      <a href="beneficios-desafios.html">Benefícios &amp; Desafios</a>
+      <a href="futuro.html" aria-current="page">Futuro</a>
+    </nav>
+    <button id="a11y-toggle" class="a11y-toggle" aria-expanded="false" aria-controls="a11y-panel">
+      ⚙ Ferramentas de leitura
+    </button>
+  </div>
+  <div class="progress-strip" aria-hidden="true"><span class="on"></span><span class="on"></span><span class="on"></span><span class="on"></span></div>
+  <div id="a11y-panel" class="a11y-panel">
+    <div class="wrap a11y-panel-inner">
+      <div class="a11y-group">
+        <span>Tamanho do texto</span>
+        <button class="a11y-btn" data-fontstep="-0.1" aria-label="Diminuir texto">A−</button>
+        <button class="a11y-btn" data-fontstep="0" aria-label="Tamanho padrão">A</button>
+        <button class="a11y-btn" data-fontstep="0.1" aria-label="Aumentar texto">A+</button>
+      </div>
+      <div class="a11y-group">
+        <span>Contraste</span>
+        <button id="btn-contraste" class="a11y-btn" type="button" aria-pressed="false">Alto contraste</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="conteudo">
+  <div class="hero wrap">
+    <span class="eyebrow">Página 4 · Fechamento</span>
+    <h1>Quatro tendências e uma pergunta em aberto</h1>
+    <p class="lede">O que existe hoje é só uma fração do que essa tecnologia deve entregar nos próximos anos. Aqui vão quatro frentes que tendem a crescer: </p>
+  </div>
+
+  <div class="wrap">
+    <section aria-labelledby="h-tendencias">
+      <h2 id="h-tendencias" class="sr-only" style="position:absolute;left:-9999px;">Tendências</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <h3>IA generativa</h3>
+          <p>Além de apenas descrever informações existentes, a IA generativa está evoluindo para criar conteúdos acessíveis de forma personalizada e instantânea. Um mesmo material poderá ser transformado automaticamente em texto simplificado, versão em áudio, descrição detalhada de imagens, legendas, linguagem mais clara ou até explicações alternativas para gráficos e tabelas, tudo adaptado às necessidades específicas de cada usuário e ao contexto em que a informação está sendo utilizada.</p>
+        </div>
+        <div class="timeline-item">
+          <h3>Interfaces inteligentes</h3>
+          <p>Os sistemas operacionais e aplicativos caminham para se adaptar automaticamente ao perfil de cada usuário. Em vez de depender apenas de configurações manuais, a própria IA poderá identificar dificuldades de leitura, navegação ou interação e ajustar contraste, tamanho das fontes, espaçamento, organização da interface e métodos de entrada. Isso permitirá uma experiência mais confortável, personalizada e acessível desde o primeiro uso.</p>
+        </div>
+        <div class="timeline-item">
+          <h3>Tradução em tempo real</h3>
+          <p>Os avanços em reconhecimento de fala, processamento de linguagem natural e visão computacional permitirão traduções cada vez mais rápidas entre voz, texto e Libras. O objetivo é reduzir significativamente o atraso durante as conversas, possibilitando uma comunicação praticamente simultânea entre pessoas ouvintes e pessoas surdas em salas de aula, reuniões, eventos, atendimentos e plataformas digitais, tornando a comunicação muito mais fluida.</p>
+        </div>
+        <div class="timeline-item">
+          <h3>Tecnologias vestíveis</h3>
+          <p>Óculos inteligentes, fones de ouvido, relógios e outros dispositivos vestíveis equipados com câmeras e Inteligência Artificial deverão oferecer assistência contínua aos usuários. Esses equipamentos poderão reconhecer pessoas, identificar objetos, descrever ambientes, ler placas e documentos, detectar obstáculos e fornecer orientações em áudio ou diretamente no campo de visão. Com isso, pessoas com deficiência visual ou outras limitações ganharão ainda mais autonomia, segurança e independência nas atividades do dia a dia.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="closing">
+      <h2>Conclusão</h2>
+      <p>A pergunta que fica não é se a IA vai continuar avançando em acessibilidade (isso já é praticamente certo) mas se esse avanço vai chegar a quem mais precisa dele. A tecnologia resolve barreira de percepção com uma eficiência que a acessibilidade manual nunca teve; o que ela ainda não resolve sozinha é distribuição, custo e confiabilidade. A IA pode sim contribuir pra uma sociedade mais inclusiva, mas só se for tratada como infraestrutura pública, e não como recurso exclusivo pra poucos.</p>
+    </div>
+
+    <hr class="rule">
+
+    <section aria-labelledby="h-fontes">
+      <h2 id="h-fontes"><span class="num">FONTES</span>Referências Técnicas e Institucionais</h2>
+      <ul class="sources">
+        <li>W3C Web Accessibility Initiative (WAI)</li>
+        <li>WCAG 2.2 Guidelines</li>
+        <li>WHO – World Report on Disability</li>
+        <li>Harvard – AI and Disability Research</li>
+        <li>UNICEF – Assistive Technology</li>
+        <li>Be My Eyes (oficial)</li>
+        <li>Apple VoiceOver Guide</li>
+        <li>Google Live Caption</li>
+        <li>Microsoft Copilot Overview</li>
+        <li>RNIB – Assistive Technology</li>
+      </ul>
+    </section>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+
+    <div class="pager">
+      <a href="beneficios-desafios.html">← Benefícios &amp; Desafios</a>
+      <span></span>
+    </div>
+
+    <p class="footer-note">
+      Projeto desenvolvido para a disciplina de Introdução à Computação do curso de Computação e Inteligência Artificial da UFMA.
+    </p>
+
+    <div class="foot-row" style="margin-top:.8rem;">
+      <p>Autores: Marcone José de Carvalho Queiroz Júnior, João Vitor Araújo Serra e Rodrigo Goulart Cavalcante Rego.</p>
+      <p>Página 4 de 4</p>
+    </div>
+
+  </div>
+</footer>
+
+<script src="a11y.js"></script>
+</body>
+</html>

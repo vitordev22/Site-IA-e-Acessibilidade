@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IA e Acessibilidade — Aplicações</title>
+<meta name="description" content="Seis aplicações práticas de inteligência artificial na acessibilidade digital, com exemplos reais.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+<header class="site-header">
+  <div class="wrap header-row">
+    <a class="brand" href="index.html">
+      <span class="brand-name">IA e Acessibilidade</span>
+    </a>
+    <nav class="primary" aria-label="Navegação principal">
+      <a href="index.html">Início</a>
+      <a href="aplicacoes.html" aria-current="page">Aplicações</a>
+      <a href="beneficios-desafios.html">Benefícios &amp; Desafios</a>
+      <a href="futuro.html">Futuro</a>
+    </nav>
+    <button id="a11y-toggle" class="a11y-toggle" aria-expanded="false" aria-controls="a11y-panel">
+      ⚙ Ferramentas de leitura
+    </button>
+  </div>
+  <div class="progress-strip" aria-hidden="true"><span class="on"></span><span class="on"></span><span></span><span></span></div>
+  <div id="a11y-panel" class="a11y-panel">
+    <div class="wrap a11y-panel-inner">
+      <div class="a11y-group">
+        <span>Tamanho do texto</span>
+        <button class="a11y-btn" data-fontstep="-0.1" aria-label="Diminuir texto">A−</button>
+        <button class="a11y-btn" data-fontstep="0" aria-label="Tamanho padrão">A</button>
+        <button class="a11y-btn" data-fontstep="0.1" aria-label="Aumentar texto">A+</button>
+      </div>
+      <div class="a11y-group">
+        <span>Contraste</span>
+        <button id="btn-contraste" class="a11y-btn" type="button" aria-pressed="false">Alto contraste</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="conteudo">
+  <div class="hero wrap">
+    <span class="eyebrow">Página 2 · Na prática</span>
+    <h1>Seis formas como a IA já está no dia a dia da acessibilidade</h1>
+    <p class="lede">Nada disso é hipotético, tudo já roda em apps gratuitos ou embutidos em sistemas operacionais que milhões de pessoas usam agora mesmo.</p>
+  </div>
+
+  <div class="wrap">
+    <section aria-labelledby="h-cards">
+      <h2 id="h-cards" class="sr-only" style="position:absolute;left:-9999px;">Aplicações</h2>
+      <div class="grid">
+        <article class="card">
+          <span class="tag">Visão</span>
+          <h3>Leitores de tela com IA</h3>
+          <p>Vão além de simplesmente ler o texto: entendem a estrutura da página e tentam descrever pra que serve cada elemento, ajudando quem usa leitor de tela a se virar em sites mal construídos.</p>
+        </article>
+        <article class="card">
+          <span class="tag">Fala</span>
+          <h3>Reconhecimento de voz</h3>
+          <p>Transforma fala em texto (ou comando) com precisão suficiente pra escrever, controlar dispositivos e navegar sem usar as mãos, essencial pra quem tem deficiência motora.</p>
+        </article>
+        <article class="card">
+          <span class="tag">Audição</span>
+          <h3>Legendas automáticas</h3>
+          <p>Geram legenda em tempo real pra vídeo, chamada de vídeo e transmissão ao vivo, sem precisar de alguém legendando na hora.</p>
+        </article>
+        <article class="card">
+          <span class="tag">Libras</span>
+          <h3>Tradução para Libras</h3>
+          <p>Modelos que convertem texto ou fala em avatares 3D sinalizando em Libras, dando acesso a conteúdos que uma pessoa surda nunca teve intérprete pra ver.</p>
+        </article>
+        <article class="card">
+          <span class="tag">Visão</span>
+          <h3>Descrição automática de imagens</h3>
+          <p>Modelos de visão computacional descrevem numa frase o que tem numa foto, de uma bula de remédio a uma cena de rua, pra quem não consegue enxergar a imagem.</p>
+        </article>
+        <article class="card">
+          <span class="tag">Motora</span>
+          <h3>Navegação por comandos de voz</h3>
+          <p>Dá pra operar computador, celular ou até a casa inteira só de voz, sem depender de mouse, teclado ou toque na tela.</p>
+        </article>
+      </div>
+    </section>
+
+    <hr class="rule">
+
+    <section aria-labelledby="h-exemplos">
+      <h2 id="h-exemplos"><span class="num">EXEMPLOS REAIS</span>Onde ver isso funcionando hoje</h2>
+      <p class="section-lede">Alguns produtos que concentra boa parte dessas aplicações e serve de referência pra quem quer estudar o tema:</p>
+      <ul class="example-strip">
+        <li>Be My Eyes</li>
+        <li>Microsoft Seeing AI</li>
+        <li>Google Live Caption</li>
+        <li>ChatGPT (modo de voz e imagem)</li>
+        <li>Microsoft Copilot</li>
+      </ul>
+      <p style="margin-top:1.4rem;color:var(--ink-soft);font-size:.95rem;"><p>O <strong style="color:var(--ink);">Be My Eyes</strong> conecta pessoas cegas ou com baixa visão a voluntários por chamadas de vídeo e, mais recentemente, também utiliza um assistente de Inteligência Artificial capaz de descrever ambientes, objetos, documentos e imagens em tempo real. O <strong style="color:var(--ink);">Seeing AI</strong>, da Microsoft, usa a câmera do celular para narrar textos, reconhecer produtos, identificar cédulas de dinheiro, cores e pessoas ao redor do usuário. Já o <strong style="color:var(--ink);">Live Caption</strong>, do Google, gera legendas automáticas para praticamente qualquer áudio reproduzido no aparelho, facilitando o acesso a vídeos, chamadas e podcasts. Além dessas ferramentas, o <strong style="color:var(--ink);">ChatGPT</strong>, com recursos de voz e análise de imagens, e o <strong style="color:var(--ink);">Microsoft Copilot</strong>, que auxilia na leitura, escrita e compreensão de conteúdos, mostram como a Inteligência Artificial vem tornando a tecnologia mais acessível, inclusiva e útil para milhões de pessoas no dia a dia.</p>
+    </section>
+  </div>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+
+    <div class="pager">
+      <a href="index.html">← Início</a>
+      <a class="next" href="beneficios-desafios.html">
+        Próximo — Benefícios &amp; Desafios →
+      </a>
+    </div>
+
+    <p class="footer-note">
+      Projeto desenvolvido para a disciplina de Introdução à Computação do curso de Computação e Inteligência Artificial da UFMA.
+    </p>
+
+    <div class="foot-row" style="margin-top:.8rem;">
+      <p>Autores: Marcone José de Carvalho Queiroz Júnior, João Vitor Araújo Serra e Rodrigo Goulart Cavalcante Rego.</p>
+      <p>Página 2 de 4</p>
+    </div>
+
+  </div>
+</footer>
+<script src="a11y.js"></script>
+</body>
+</html>
